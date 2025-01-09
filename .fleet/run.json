@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "command",
+            "name": "run",
+            "dependsOn": ["build"],
+            "program": "$PROJECT_DIR$/a.exe",
+        },
+        {
+            "type": "command",
+            "name": "build",
+            "program": "g++",
+            "args": ["$PROJECT_DIR$\hw1.cpp", "-std=c++11"],
+
+        },
+    ]
+}
